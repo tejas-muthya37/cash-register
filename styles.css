@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.conditional-div {
+    display: none;
+}
+
+.change-table {
+    display: none;
+}
