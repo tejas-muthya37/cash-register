@@ -26,8 +26,10 @@ function calculateChange(changeAmount) {
 }
 
 btnCheck.addEventListener("click", function () {
-  changeTable.classList.remove("change-table");
-  if (cashAmount.value >= billAmount.value) {
+  errorMsg.style.display = "none";
+
+  if (Number(cashAmount.value) > Number(billAmount.value)) {
+    changeTable.classList.remove("change-table");
     var changeAmount = cashAmount.value - billAmount.value;
     calculateChange(changeAmount);
   } else {
@@ -36,7 +38,7 @@ btnCheck.addEventListener("click", function () {
 });
 
 btnNext.addEventListener("click", function () {
-  if (billAmount.value > 0) {
-    conditionalDiv.classList.remove("conditional-div");
-  }
+  // errorMsg.style.display = "none";
+  if (billAmount.value > 0) conditionalDiv.classList.remove("conditional-div");
+  // else showMessage("Bill amount needs to be valid.");
 });

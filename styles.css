@@ -1,7 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 .container {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+.heading {
+    color: purple;
+}
+
+.description {
+    margin-top: 0;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border: 2px solid purple;
+    padding: 5px 0 5px 15px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color:purple;
+    color: white;
+    margin: 20px auto;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    display: block;
+}
+
+.processing {
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+caption {
+    font-weight: bold;
+    margin: 25px 0;
 }
 
 .conditional-div {
@@ -10,4 +67,18 @@
 
 .change-table {
     display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, tr, td{
+    min-width: 100px;
+    height: 35px;
+}
+
+th, td {
+    border: 2px solid purple;
+    padding: 2px;
 }
