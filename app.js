@@ -28,7 +28,7 @@ function calculateChange(changeAmount) {
 btnCheck.addEventListener("click", function () {
   errorMsg.style.display = "none";
 
-  if (Number(cashAmount.value) > Number(billAmount.value)) {
+  if (Number(cashAmount.value) >= Number(billAmount.value)) {
     changeTable.classList.remove("change-table");
     var changeAmount = cashAmount.value - billAmount.value;
     calculateChange(changeAmount);
